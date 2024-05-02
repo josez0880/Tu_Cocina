@@ -1,0 +1,137 @@
+@import url("https://use.typekit.net/xvk3bpk.css");
+/* VARIABLE DE COLORES DEL PROYECTO */
+:root{ 
+    --theme-color: #8c816d;
+    --primary-color: #2D2923;
+    --secundary-color: #BF5E0A;
+    --terceary-color: #F2EEE7;
+    --text-color-inverse: #EEE7E1;
+    --text-color: #BF5E0A;
+    --menu-background-color: #FFE3CB;
+    --menu-mobile-background-color: #3A4460;
+}
+/* AJUSTE DE WEB */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    /* Establece el tamaño del fuente obligada al navegador */
+    font-size: 10px;
+}
+/* GLOBALES */
+body{
+    /* FUENTE DEL PROYECTO */
+    font-family: hind-siliguri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* AJUSTE GLOBALES DE CUERPO */
+    min-height: 100%;
+    background-color: var(--primary-color);
+}
+
+/* LOGO */
+.Logo{
+    display: flex;
+    height: 35px;
+}
+
+/* FUENTE */
+/* Tamaños */
+.TextH1{
+    font-size: 4.0rem;
+}
+
+.TextH2{
+    font-size: 3.0rem;
+}
+
+.TextBody{
+    font-size: 1.4rem;
+}
+
+.TextBtn{
+    font-size:1.0rem;
+    font-weight: 700;
+}
+
+.Act{
+    color: var(--secundary-color);
+}
+
+/* Estilo */
+.Bold{
+    font-family: hind-siliguri, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* BOTONES */
+.Btn-Fill{
+    /* Tamaño */
+    width: 324px;
+    height: 48px;
+    /* Espaciado */
+    margin: 0rem 0rem 1.0rem 0rem;
+    /* Color */
+    background: var(--theme-color);
+    border-color: var(--theme-color);
+    border-radius: 0.4rem;
+    /* Texto del boton */
+    font-size: 1.0rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Btn-Text{
+    /* Tamaño */
+    width: 324px;
+    height: auto;
+    /* Espaciado */
+    margin: 1.0rem 0rem 2.0rem 0rem;
+    /* Color negado para dejar solo texto */
+    background: none;
+    border-color: none;
+    border-style: none;
+    border-radius: none;
+    /* Texto del boton */
+    font-size: 1.2rem;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    text-decoration: unset;
+    font-weight: 700;
+
+}
+
+/* ENTRADA DE DATOS LOGING */
+.FillInput{
+    /* Tmaño del cuadro */
+    width: 32.4rem;
+    height: 5.0rem;
+    /* Espaciado */
+    margin: 0.4rem 0rem 2.0rem 0rem;
+    /* Color de borde */
+    background: var(--primary-color);
+    border: var(--theme-color) 1px solid;
+    /* Texto */
+    padding: 1.4rem 1.4rem 1.4rem 1.4rem;
+    color: var(--theme-color);
+}
+
+a{
+    font-family: hind-siliguri, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Difusor de imagen bajo texto*/
+.InforConfir{
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    height: 100%;
+    position: relative;
+}

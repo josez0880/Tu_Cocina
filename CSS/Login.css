@@ -1,0 +1,240 @@
+@import url("https://use.typekit.net/xvk3bpk.css");
+/* CREACIÓN DE GRID */
+.Container{
+    display: grid;
+    /* ORDENA ELEMENTOS DEL GRID */
+    grid-template: 
+        "Nave   Nave    Nave" 70px  
+        "Left   Left    Rigth" auto/
+        auto    auto    45%
+    ;
+}
+
+/* ELEMENTOS */
+/*BARRA NAVEGACIÓN*/
+.Nave{
+    grid-area: Nave;
+    display: flex;
+    align-items: center;
+    background-color: var(--theme-color);
+}
+
+/* Barra de navegación ajuste de cada elementos */
+    .Nave >* {
+        margin: 0 auto;
+    }
+
+
+/* PANEL IZQUIERDO */
+.Left{
+    grid-area: Left;
+    /* Imagen de fondo */
+    background-image: url("../Img/Login/pexels-cottonbro-3338497.jpg");
+    /* autoajuste del tamaño */
+    background-size: 100%;
+    background-position-y: 50%; 
+    background-repeat: no-repeat;
+
+}
+    /* Texto del panel */
+    .ConetnText {
+        color: var(--text-color);
+        /* Posicionamiento */
+        margin: 30% 2.0rem 30% 10.4rem;
+
+    }
+    
+
+    
+
+/* PANEL DERECHO */
+.Rigth{
+    grid-area: Rigth;
+    background-color: var(--primary-color);
+    /* Alinecación del DIV con elementos de entrada */
+    display: flex;
+    margin: auto;
+    width: 32.4rem;
+    height: 34.1rem;
+}
+    /* TITULO DE SECCIÓN*/
+    .TextH2{
+        color: var(--secundary-color);
+    }
+
+    /* FORMATO INPUT */
+    /* Espaciado con respecto a la web */
+    .Block-Input{
+        margin: 2.0rem 0rem 2.0rem 0rem;
+    }
+
+    /* Formato del lector de datos */
+    .Entrada{
+        /* Tamaño */
+        width: 32.4rem;
+        height: 5.0rem;
+        padding: 1.4rem;
+        /* Espaciado del texto descriptor */
+        margin: 0.8rem 0rem 0rem 0rem;
+        /* Borde */
+        border: 2px solid #A89E8B;
+        border-radius: 1.0rem;
+        /* Fondo */
+        background: var(--terceary-color);
+        /* Funte */
+        font-size: 1.4rem;
+    }
+    /* Ejemplo */
+    .TextBody{
+        color: var(--theme-color);
+    }
+
+    /* BOTONES */
+    .Btn-Fill{
+        /* Tamaño */
+        width: 324px;
+        height: 48px;
+        /* Espaciado */
+        margin: 0rem 0rem 2.0rem 0rem;
+        /* Color */
+        background: var(--theme-color);
+        border-color: var(--theme-color);
+        border-radius: 0.4rem;
+        /* Texto del boton */
+        font-size: 1.0rem;
+        color: var(--primary-color);
+        text-transform: uppercase;
+    }
+
+    .Btn-Text{
+        /* Tamaño */
+        width: 324px;
+        height: auto;
+        /* Espaciado */
+        margin: 2.0rem 0rem 2.0rem 0rem;
+        /* Color negado para dejar solo texto */
+        background: none;
+        border-color: none;
+        border-style: none;
+        border-radius: none;
+        /* Texto del boton */
+        font-size: 1.2rem;
+        color: var(--theme-color);
+        text-transform: uppercase;
+    }
+
+
+/* Tablet version */
+@media(max-width: 900px)
+{
+    .Container{
+        grid-template-areas: 
+        "Nave Nave"   70px
+        "Rigth Rigth" 200px
+    ;
+    }
+    
+    .Nave{
+        grid-area: Nave;
+        background-color: antiquewhite;
+    }
+    
+    .Left{
+        grid-area: Left;
+        background-color:aqua;
+    
+    }
+    
+}
+/* Mobile Version */
+@media(max-width: 600px)
+{
+    .Rigth{
+        grid-area: Rigth;
+        background-color: blue;
+    }
+    .Container{
+        display: grid;
+        /* gap: 10px; */
+        grid-template-areas:
+        "Nave"     
+        "Left" 
+        "Rigth"
+        ;
+    }
+}
+
+/* ------------------------------------------------------------------------------- */
+.Container2{
+    display: grid;
+    /* ORDENA ELEMENTOS DEL GRID */
+    grid-template: 
+    "Nave" 70px
+    "Cont_Container" auto
+    ;
+    /* Imagen de fondo */
+    background-image: url("../Img/Login/pexels-dapurmelodi-1109197\ \(1\).jpg");
+    /* autoajuste del tamaño */
+    background-size: 100%;
+    background-position-y: 50%; 
+    /* background-position-y: 50%;  */
+    background-repeat: no-repeat;
+    
+}
+/* Contenedor de formulario  */
+.Cont_Container{
+    grid-area: Cont_Container;
+    /* Tamaño del cuadro */
+        width: 49.4rem;
+        margin-left: 35%;
+        /* Marcos de la info */
+        padding: 3.5rem 8.5rem 0rem 8.5rem;
+        /* Color */
+        background-color: var(--primary-color);
+        
+    }
+    /* Formato local del texto */
+    .TextH1{
+        color: var(--secundary-color);
+        margin-bottom: 1.0rem;
+    }
+    /* Formato local de botones */
+    .FielInfor{
+        margin: 1.3rem 0rem 0rem 0rem;
+    }
+
+/* ------------------------------------------------------------------------------- */
+.Container3{
+    display: grid;
+    /* ORDENA ELEMENTOS DEL GRID */
+    grid-template: 
+    "Nave" 70px
+    /* "InforConfir" auto */
+    ;
+}
+    /* Imagen del fondo */
+    .background{
+        /* Imagen de fondo */
+        background-image: url("../Img/Login/pexels-yente-van-eynde-2403391.jpg");
+        /* autoajuste del tamaño */
+        background-size: 100%;
+        background-position-y: 50%;
+        /* background-position-y: 50%;  */
+        background-repeat: no-repeat;
+    }
+    /* Filtro de color marron */
+
+    /* Texto superpuesto sobre filtro */
+    .Conent{
+        position: absolute;
+        z-index: +1;
+        text-align: center;
+
+        margin: 15% 20%;
+
+    }
+
+
+    .TextH2{
+        margin-bottom: 1.5rem;
+    }

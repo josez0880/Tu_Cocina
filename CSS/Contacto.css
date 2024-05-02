@@ -1,0 +1,60 @@
+.Conteiner{
+    display: grid;
+    grid-template:
+        "Naver" 7.0rem
+        "Title" auto
+        "Person" auto
+    ;
+    background-image: url("../Img/About/pexels-dmitry-demidov-3800420.jpg");
+}
+
+.Title{
+    grid-area: Title;
+    margin: 5.0rem 20.7rem 0 20.7rem;
+    text-align: center;
+    color: var(--terceary-color);
+
+    /*color: var(--secundary-color);*/
+}
+
+.Person{
+    grid-area: Person;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+
+
+.Person-Context{
+    display: grid;
+    margin-bottom: 2.0rem;
+    grid-template-columns:75% 35%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "Tect photo" ;
+}
+
+.photo{
+    grid-area:photo ;
+    background-repeat: no-repeat;
+}
+.f1{
+    background-size: 50%;
+    background-image: url("../Img/Logo/Renan.png");
+}
+.f2{
+    background-size:50%;
+    background-image: url("../Img/Logo/Mendez.png");
+
+}
+
+.Tect
+{
+    grid-area:Tect;
+    margin-bottom: 7.0rem;
+    color: var(--terceary-color);
+}
+
+

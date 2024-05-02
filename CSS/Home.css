@@ -1,0 +1,122 @@
+.Conteiner{
+    display: grid;
+    grid-template:
+        "Naver" 7.0rem
+        "Welcom" 60.0rem
+        "ContentHome" auto
+        "footer" auto
+    ;
+}
+/*BARRA DE MENU*/
+/*Barra*/
+.Naver{
+    grid-area: Naver;
+    position: fixed;
+    background-color: var(--theme-color);
+    width: 100%;
+    z-index: +2;
+
+}
+    /*Organización de elementos */
+    .Naver-Org{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.0rem;
+        max-width: 118.3rem;
+        margin: 0 20.7rem;
+    }
+    /*Elementos*/
+    .menu{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    /*estilo a elementos de la lista*/
+    .menu li{
+        padding: 0 15px;
+    }
+    /*Formato del texto del menu*/
+    .menu a {
+        color: var(--terceary-color);
+        font-size: 1.6rem;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-decoration: unset;
+
+        position: relative;
+    }
+    /*Formato de logo*/
+    .Naver-Logo{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        /*color: var(--primary-color);*/
+    }
+    .Naver-Logo img{
+        border-radius: 50%;
+    }
+/*BIENVENIDA*/
+.Welcom{
+    grid-area: Welcom;
+    /*Color global del texto*/
+    color: var(--terceary-color);
+    /*Formato de imagen*/
+    /*background-image: url("../Img/Login/pexels-cottonbro-3171129.jpg");*/
+    background-image: url("../Img/Login/pexels-cottonbro-3171129.jpg");
+    background-size: 100%;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+}
+    .Welcom-Text {
+        /*Formato del texto en banner*/
+        margin:20.8rem 20.7rem 1.0rem 20.7rem;
+        position: absolute;
+        /*Superposisicon de elemento*/
+        z-index: +1;
+    }
+    /*Difusor de imagen*/
+    .InforConfir{
+        opacity: 0.5;
+    }
+
+/*CONTENIDO VIDEOS*/
+.ContentHome{
+    /*Contenido de vidos*/
+    grid-area: ContentHome;
+    width: 83.4rem;
+    margin: 0 auto;
+}
+    /*Texto titulo*/
+    .Text{
+        margin: 7.3rem auto;
+        font-size: 4.0rem;
+        color: var(--terceary-color);
+        text-align: center;
+    }
+
+    /*Tarjeta con videos*/
+    .ContentHome-Card{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(1, auto);
+        /*width: 83.4rem;*/
+        /*height: 53.0rem;*/
+        margin: 5.0rem auto;
+
+        background: var(--terceary-color);
+    }
+    /*formato de video*/
+    .ContVideo{
+        width: 83.4rem;
+    }
+/*    Titulo de tarjetas*/
+    .CardText{
+        margin: 5.3rem 8.4rem;
+        color: var(--secundary-color);
+    }
+    
+.footer{
+    grid-area: footer;
+}

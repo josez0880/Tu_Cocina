@@ -1,0 +1,63 @@
+.Conteiner{
+    display: grid;
+    grid-template:
+        "Naver" 7.0rem
+        "Inscrip" auto
+;
+}
+/*Grid que mantendra infor*/
+.Inscrip{
+    grid-area: Inscrip;
+    /*Ajuste para imagen de fondo*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* Divide este div en 2*/
+    display: grid;
+    grid-template-columns: auto 45%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "Descrip Regis";
+}
+
+/*Fondo de curso 1*/
+.f1 {
+    background-position-y: 15%;
+    background-image: url("../Img/Home/arrozconpollo.png");
+}
+
+ .f2{
+    background-position-y: 30%;
+    background-image: url("../Img/Home/tamalpanameño.png");
+}
+
+ .f3 {
+     background-position-y: 30%;
+     background-image: url("../Img/Home/sancochoimg.png");
+ }
+/*Descripción*/
+.Descrip
+{
+    grid-area: Descrip;
+    margin-left: 20.7rem;
+
+    padding: 30% 5% 0 0;
+    color: var(--primary-color);
+}
+
+.Regis{
+    grid-area: Regis;
+
+    width: 36.0rem;
+    margin: 10% 20%;
+    padding: 4.0rem 2.0rem;
+
+    color: var(--theme-color);
+    background-color: #2D2923;
+}
+.Btn-Fill{
+    background: #A89E8B;
+}
+
+.Btn-Text{
+    color: var(--terceary-color);
+}

@@ -1,0 +1,91 @@
+/*Grid de la pagina*/
+.ConteinerCurso{
+    display: grid;
+    grid-template:
+        "Naver" 7.0rem
+        "Welcom" 23.0rem
+        "ContentCurso" auto
+    ;
+}
+/*Mostrar barra*/
+.Naver{
+    grid-area: Naver;
+}
+/*Mensaje de cabecera banner*/
+.Welcom{
+    /*Ajustes locales*/
+    background-image: url("../Img/Login/pexels-yente-van-eynde-2403391.jpg");
+    background-position-y: 60%;
+}
+    /*Formateo del texto*/
+    .Welcom-Text{
+        margin:6rem 5.7rem auto 20.7rem;
+        position: absolute;
+    }
+    /*Difusor*/
+    .InforConfir{
+        opacity: 0.5;
+    }
+/*Genera columnas y filas de tarjetas de cada curso*/
+.ContentCurso{
+    grid-area: ContentCurso;
+    margin: 5.0rem 20.7rem;
+    display: grid;
+    /*Establece las columnas y su ancho*/
+    grid-template-columns: repeat(3,35.5rem);
+    /*Establece las filas y su alto*/
+    grid-template-rows: repeat(1, auto);
+    /*Separacion entre cuadros*/
+    gap: 1.0rem;
+}
+    /*Contenido de las tarjetas*/
+    /*Foto del curso*/
+    .Preview{
+        /*Tamaño de la cuadro para la foto*/
+        width: 31.5rem;
+        height: 21.2rem;
+        /*Color del cuadro*/
+        background-color: var(--primary-color);
+        /*Separacion del elemento infeior*/
+        margin-bottom: 2.0rem;
+        /*Ajustes de la imagen*/
+        background-size: 100%;
+
+        background-repeat: no-repeat;
+    }
+    /*Foto tarjeta 1*/
+    .p1{
+        background-position-y: 15%;
+        background-image: url("../Img/Home/arrozconpollo.png");
+    }
+    .p2 {
+        background-position-y: 30%;
+        background-image: url("../Img/Home/tamalpanameño.png");
+    }
+
+    .p3 {
+        background-position-y: 30%;
+        background-image: url("../Img/Home/sancochoimg.png");
+    }
+    /*Forma y tamaño de la tarjeta*/
+    .CursoCard{
+
+        padding: 2.0rem;
+        background-color: var(--menu-background-color);
+
+    }
+    /*Boton de accion*/
+    .Btn-Fill{
+        /*Tamaño*/
+        width: 12.0rem;
+        height: 4.0rem;
+        /*Separacion de lo demas*/
+        margin: 2.0rem 0rem;
+        /*Bodes*/
+        border: 2px solid var(--theme-color);
+        background-color: transparent;
+        /*Color*/
+        color: var(--theme-color);
+        text-transform: none;
+    }
+

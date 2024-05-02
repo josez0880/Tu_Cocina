@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="stylesheet" href="CSS/Login.css">
+	<link rel="stylesheet" href="CSS/Main.css">
+</head>
+	<body class="Container2">
+		<div class="Nave">
+			<!-- Logo de la aplicación pertenece a esta divisi�n -->
+			<img class="Logo" src="Img/Logo/noun_Plate_2442400.svg" alt="logo de la pagina TuCocina.com">
+		</div>
+		<div class="Cont_Container">
+			<!-- Formulario para registro a la aplicaci�n web. -->
+			<p class="TextH1 Bold">Crea una cuenta</p>
+			<form>
+				<div class="FielInfor">
+					<label class="TextBody Bold" for="fname">Nombre</label>
+					<input class="FillInput" type="text" id="fname" name="fname" placeholder="Ingresar Nombre">
+				</div>
+				<div class="FielInfor">
+					<label class="TextBody Bold" for="lname">Apellido</label>
+					<input class="FillInput" type="text" id="lname" name="lname" placeholder="Ingresar Apellido">
+				</div>
+				<div class="FielInfor">
+					<label class="TextBody Bold" for="age">Fecha de Nacimiento</label>
+					<input class="FillInput" type="date" id="age" name="age" placeholder="dd/mm/aaaa">
+				</div>
+				<div class="FielInfor">
+					<label class="TextBody Bold" for="correo">Email</label>
+					<input class="FillInput" type="email" id="correo" name="correo" placeholder="ejemplo@mail.com">
+				</div>
+				<div class="FielInfor">
+					<label class="TextBody Bold" for="pass_signin">Contraseña</label>
+					<input class="FillInput" type="password" id="pass_signin" name="pass_signin" placeholder="Ingresar Contraseña"><br>
+				</div>
+
+				<input class="Btn-Fill" type="submit" value="Registrar">
+				<a href="login.html"><button class="Btn-Text" type="button">Cancelar</button></a>
+			</form>
+		</div>
+	</body>
+</html>
